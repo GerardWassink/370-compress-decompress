@@ -2,10 +2,10 @@
 A System/370 assembler program to compress and decompress records, callable from PL/I.
 
 ## Origin
-I wrote this program in 1993 while working for a large bank. There was one file that spanned szeveral disk volumes. It cost the a lot of money for storage. So a rpogram was written in PL/I to compress the records before writing them in that file. This saved some room. I was asked to have a look at that program. Suffice to say it was using a horrible algorithm, only to exclude repeating spaces.
+I wrote this program in 1993 while working for a large bank. There was one file that spanned szeveral disk volumes. It cost the a lot of money for storage. So a program was written in PL/I to compress the records before writing them in that file. This saved some room. I was asked to have a look at that program. Suffice to say it was using a horrible algorithm, only to exclude repeating spaces.
 
 ## New algorithm
-I set down and created a better algorithm that would compress some more. Obviously it had to compress repeating spaces; but furthermore it would compress all repeating characters and last but not least it would 'ZAP' zonder numeric data to BCD.
+I set down and created a better algorithm that would compress some more. Obviously it had to compress repeating spaces; but furthermore it would compress all repeating characters and last but not least it would 'ZAP' zoned numeric data to BCD.
 
 ## Workings
 To be able to process compressed records every area of the record will have to have it's own control code, even the uncompreseed areas. This control code can take one of two forms as shown below. In both cases the dots are placeholders for bits that make up the length of the following area. As can be seen, bit 6 of (the first byte of) the control code indicates wether there is a second length byte.
