@@ -9,4 +9,7 @@ This is the assembler program, embedded in JCL statements. As a job, it will ass
 ### testpli
 This job contains the PL/I program I made to be able to test the assembler program. It contains the hexadecimal print routine and some control info.
 
-
+## Testing
+First adapt (when needed) the gaw8051 job and submit it. Check it for max RC 0000. You now have your callable module. 
+Now use the other job and play with it to your heart's content. Change the record and see wether it gets compressed and decompressed back to it's original form.
+(spoiler: it will).
