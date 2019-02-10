@@ -1,4 +1,4 @@
-# HOWTO.md
+# HOWTO
 
 ## The files
 These files must be uploaded using IND$FILE to a member in a PDS under your control. I worked on MVS3.8j TK4- under Hercules, so YMMV... I work on my MVS in the HERC01 user, so do ***NOT*** forget to change the 'HERC01' in the jobs where needed.
