@@ -6,7 +6,7 @@ These files must be uploaded using IND$FILE to a member in a PDS under your cont
 ### gaw8051	
 This is the assembler program, embedded in JCL statements. As a job, it will assemble the program and store the callable subroutine in HERC01.TEST.LOADLIB(GAW8051). This is done at the very end of the job.
 
-### testpli
+### tst8051
 This job contains the PL/I program I made to be able to test the assembler program. It contains the hexadecimal print routine and some control info.
 
 ## Testing
