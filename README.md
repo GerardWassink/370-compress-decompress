@@ -1,7 +1,7 @@
 # System/370 compress decompress
 A System/370 assembler program to compress and decompress records, callable from PL/I.
 
-This repository is now obsolete. The contents has been ported to the MVS_Goodies repository.
+**This repository is now obsolete. The contents has been ported to the MVS_Goodies repository.**
 
 ## Origin
 I wrote this program in 1993 while working for a large bank. There was one file that spanned szeveral disk volumes. It cost the a lot of money for storage. So a program was written in PL/I to compress the records before writing them in that file. This saved some room. I was asked to have a look at that program. Suffice to say it was using a horrible algorithm, only to exclude repeating spaces.
